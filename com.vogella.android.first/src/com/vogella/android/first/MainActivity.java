@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -42,5 +43,11 @@ public class MainActivity extends Activity {
     	  Toast.makeText(this, "Button 1 pressed",
     	  Toast.LENGTH_LONG).show();
     } 
+    
+    public void button2_onClick(View view) {
+    	ImageView imgView = (ImageView)findViewById(R.id.imageView1);
+    	imgView.setImageResource(R.drawable.first);
+    }
+    
    
 }
